@@ -58,7 +58,11 @@ json com titulo
 ```
 l
 
-```json Schema
+<!--
+type: tab
+title: Json
+-->
+```json title= Json
 {
   "type": "object",
   "properties": {
@@ -71,6 +75,34 @@ l
   }
 }
 ```
+<!--
+type: tab
+title: Json Schema
+-->
+```json json_schema title= Json Schema
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "description": "The user's full name."
+    },
+    "age": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 150
+    }
+  },
+  "required": ["id", "name"]
+}
+```
+<!-- type: tab-end -->
+
+---
+
 
 json schema
 
